@@ -21,7 +21,8 @@
         <activity android:name=".LinearLayoutExActivity" />
         <activity android:name=".RelativeLayoutActivity" />
         <activity android:name=".FrameLayoutActivity" />
-        <activity android:name=".TabHostActivity"></activity>
+        <activity android:name=".TabHostActivity" />
+        <activity android:name=".TableLayoutGridLayoutActivity"></activity>
     </application>
 
 </manifest>

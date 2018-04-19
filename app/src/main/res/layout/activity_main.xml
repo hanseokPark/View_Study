@@ -60,4 +60,11 @@
         android:text="TabHost"
         android:textAllCaps="false"
         android:onClick="mOnClick"/>
+    <Button
+        android:id="@+id/btnMain07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TableLayout, GridLayout"
+        android:textAllCaps="false"
+        android:onClick="mOnClick"/>
 </LinearLayout>

@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
             intent.setClass(this, TabHostActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
+        if(view.getId()==R.id.btnMain07){
+            intent.setClass(this, TableLayoutGridLayoutActivity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
         startActivity(intent);
     }
 }
