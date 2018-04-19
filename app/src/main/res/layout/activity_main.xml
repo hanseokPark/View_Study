@@ -53,4 +53,11 @@
         android:text="Frame Layout"
         android:textAllCaps="false"
         android:onClick="mOnClick"/>
+    <Button
+        android:id="@+id/btnMain06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TabHost"
+        android:textAllCaps="false"
+        android:onClick="mOnClick"/>
 </LinearLayout>

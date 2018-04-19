@@ -20,7 +20,8 @@
         <activity android:name=".TextViewExActivity" />
         <activity android:name=".LinearLayoutExActivity" />
         <activity android:name=".RelativeLayoutActivity" />
-        <activity android:name=".FrameLayoutActivity"></activity>
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".TabHostActivity"></activity>
     </application>
 
 </manifest>

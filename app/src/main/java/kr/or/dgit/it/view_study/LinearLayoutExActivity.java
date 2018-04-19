@@ -9,5 +9,7 @@ public class LinearLayoutExActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear_layout_ex);
+        setTitle(getIntent().getStringExtra("title"));
+        setTitle(R.string.main_title03);
     }
 }

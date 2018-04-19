@@ -28,6 +28,7 @@ public class TextViewExActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view_ex);
         setTitle(getIntent().getStringExtra("title"));
+        setTitle(R.string.main_title02);
 
         edittext = findViewById(R.id.editText);
         checkBox = findViewById(R.id.checkText);

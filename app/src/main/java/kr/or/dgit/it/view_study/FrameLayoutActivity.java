@@ -14,6 +14,8 @@ public class FrameLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frame_layout);
+        setTitle(getIntent().getStringExtra("title"));
+        setTitle(R.string.main_title05);
 
         text01 = findViewById(R.id.viewcolor1);
         text02 = findViewById(R.id.viewcolor2);
