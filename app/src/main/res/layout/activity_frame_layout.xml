@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameLayoutActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/viewcolor1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="#FF0000"/>
+        <TextView
+            android:id="@+id/viewcolor2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#00FF00"/>
+        <TextView
+            android:id="@+id/viewcolor3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#0000FF"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red버튼1"
+            android:onClick="framebtn01"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="green버튼2"
+            android:onClick="framebtn02"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blue버튼3"
+            android:onClick="framebtn03"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All 버튼4"
+            android:onClick="framebtn04"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

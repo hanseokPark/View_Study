@@ -26,15 +26,31 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="Linear Layout"
+        android:text="Layout"
         android:textSize="20sp"
         android:gravity="center_horizontal|center_vertical"
         android:background="#ffff00"/>
     <Button
-        android:id="@+id/btnMain03"
+    android:id="@+id/btnMain03"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Linear Layout"
+    android:textAllCaps="false"
+    android:onClick="mOnClick"/>
+
+    <Button
+        android:id="@+id/btnMain04"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Linear Layout"
+        android:text="Relative Layout"
+        android:textAllCaps="false"
+        android:onClick="mOnClick"/>
+
+    <Button
+        android:id="@+id/btnMain05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame Layout"
         android:textAllCaps="false"
         android:onClick="mOnClick"/>
 </LinearLayout>
