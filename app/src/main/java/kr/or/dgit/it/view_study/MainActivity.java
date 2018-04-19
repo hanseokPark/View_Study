@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if(view.getId()==R.id.btnMain02){
             intent.setClass(this, TextViewExActivity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
+        if(view.getId()==R.id.btnMain03){
+            intent.setClass(this, LinearLayoutExActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
         startActivity(intent);

@@ -20,4 +20,20 @@
         android:layout_height="wrap_content"
         android:text="@string/main_title02"
         android:onClick="mOnClick"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Linear Layout"
+        android:textSize="20sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="#ffff00"/>
+    <Button
+        android:id="@+id/btnMain03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="mOnClick"/>
 </LinearLayout>

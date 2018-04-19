@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewBasicActivity" />
-        <activity android:name=".TextViewExActivity"></activity>
+        <activity android:name=".TextViewExActivity" />
+        <activity android:name=".LinearLayoutExActivity"></activity>
     </application>
 
 </manifest>
