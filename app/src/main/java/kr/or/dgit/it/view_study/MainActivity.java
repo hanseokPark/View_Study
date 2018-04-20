@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
             intent.setClass(this, VibratorAndAlarmActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
+        if(view.getId()==R.id.btnMain09){
+            intent.setClass(this, Lab5_2Activity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
         startActivity(intent);
     }
 }

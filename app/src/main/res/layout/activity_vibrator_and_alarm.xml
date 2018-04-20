@@ -30,5 +30,22 @@
         android:id="@+id/btn4_sound"
         android:text="btn4"/>
 
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_start"
+           android:text="start"/>
+
+       <Button
+           android:id="@+id/btn_stop"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="stop" />
+
+   </LinearLayout>
+
 
 </LinearLayout>

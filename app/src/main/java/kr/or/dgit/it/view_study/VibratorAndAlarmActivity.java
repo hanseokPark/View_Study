@@ -15,6 +15,9 @@ public class VibratorAndAlarmActivity extends AppCompatActivity implements View.
     Button systemBeepBtn;
     Button customBepBtn;
     Button btn4;
+    Button startsong;
+    Button stop;
+    MediaPlayer player;
 
 
     @Override
@@ -29,10 +32,17 @@ public class VibratorAndAlarmActivity extends AppCompatActivity implements View.
         customBepBtn = findViewById(R.id.btn_custom_sound);
         btn4 = findViewById(R.id.btn4_sound);
 
+        startsong = findViewById(R.id.btn_start);
+        stop = findViewById(R.id.btn_stop);
+
         vibrationBtn.setOnClickListener(this);
         systemBeepBtn.setOnClickListener(this);
         customBepBtn.setOnClickListener(this);
         btn4.setOnClickListener(this);
+
+        startsong.setOnClickListener(this);
+        stop.setOnClickListener(this);
+
     }
 
     @Override
@@ -45,11 +55,24 @@ public class VibratorAndAlarmActivity extends AppCompatActivity implements View.
             Ringtone ringtone = RingtoneManager.getRingtone(getApplicationContext(), notification);
             ringtone.play();
         }else if(v==customBepBtn){
-            MediaPlayer player = MediaPlayer.create(this, R.raw.fallbackring);
+            player = MediaPlayer.create(this, R.raw.fallbackring);
             player.start();
         }else if(v==btn4){
             Vibrator vib=(Vibrator)getSystemService(VIBRATOR_SERVICE);
             vib.vibrate(new  long[]{500,1000,500,1000},-1);
+        }
+    }
+
+    public void btnCustomSoundClick(View view){
+        if(view.getId() == R.id.btn_start){
+           player = MediaPlayer.create(this, R.raw.always);
+           player.start();
+        }
+        if(view.getId() == R.id.btn_stop){
+            player.stop();
+            player.release();;
+
+            player= null;
         }
     }
 
