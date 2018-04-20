@@ -1,70 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnMain01"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_title01"
-        android:onClick="mOnClick"/>
-    <Button
-        android:id="@+id/btnMain02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_title02"
-        android:onClick="mOnClick"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnMain01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_title01" />
+
+        <Button
+            android:id="@+id/btnMain02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_title02" />
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffff00"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Layout"
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Layout"
-        android:textSize="20sp"
-        android:gravity="center_horizontal|center_vertical"
-        android:background="#ffff00"/>
-    <Button
-    android:id="@+id/btnMain03"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Linear Layout"
-    android:textAllCaps="false"
-    android:onClick="mOnClick"/>
+        <Button
+            android:id="@+id/btnMain03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="Linear Layout"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btnMain04"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Relative Layout"
-        android:textAllCaps="false"
-        android:onClick="mOnClick"/>
+        <Button
+            android:id="@+id/btnMain04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="Relative Layout"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btnMain05"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Frame Layout"
-        android:textAllCaps="false"
-        android:onClick="mOnClick"/>
-    <Button
-        android:id="@+id/btnMain06"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TabHost"
-        android:textAllCaps="false"
-        android:onClick="mOnClick"/>
-    <Button
-        android:id="@+id/btnMain07"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TableLayout, GridLayout"
-        android:textAllCaps="false"
-        android:onClick="mOnClick"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/btnMain05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="Frame Layout"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnMain06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="TabHost"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnMain07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="TableLayout, GridLayout"
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:onClick="mOnClick"
+            android:layout_height="30dp"
+            android:background="#ffff00"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="알림 효과 진동,효과음"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnMain08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_title08"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

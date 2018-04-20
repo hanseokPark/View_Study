@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
             intent.setClass(this, TableLayoutGridLayoutActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
+        if(view.getId()==R.id.btnMain08){
+            intent.setClass(this, VibratorAndAlarmActivity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
         startActivity(intent);
     }
 }
