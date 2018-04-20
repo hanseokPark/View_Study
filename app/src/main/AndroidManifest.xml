@@ -26,7 +26,8 @@
         <activity android:name=".TabHostActivity" />
         <activity android:name=".TableLayoutGridLayoutActivity" />
         <activity android:name=".VibratorAndAlarmActivity" />
-        <activity android:name=".Lab5_2Activity"></activity>
+        <activity android:name=".Lab5_2Activity" />
+        <activity android:name=".ExActivity"></activity>
     </application>
 
 </manifest>

@@ -98,5 +98,12 @@
             android:onClick="mOnClick"
             android:text="@string/main_title09"
             android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btnMainEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_titleEx"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>
