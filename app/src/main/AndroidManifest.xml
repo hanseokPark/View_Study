@@ -27,7 +27,12 @@
         <activity android:name=".TableLayoutGridLayoutActivity" />
         <activity android:name=".VibratorAndAlarmActivity" />
         <activity android:name=".Lab5_2Activity" />
-        <activity android:name=".ExActivity"></activity>
+        <activity android:name=".ExActivity" />
+        <activity android:name=".CustomEventActivity" />
+        <activity
+            android:name=".ResourceActivity"
+            android:theme="@style/myTheme" />
+        <activity android:name=".ResourceLanguageActivity"></activity>
     </application>
 
 </manifest>

@@ -105,5 +105,57 @@
             android:onClick="mOnClick"
             android:text="@string/main_titleEx"
             android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:onClick="mOnClick"
+            android:layout_height="30dp"
+            android:background="#ffff00"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/main_title10"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnMain10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_title10"
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:onClick="mOnClick"
+            android:layout_height="30dp"
+            android:background="#ffff00"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/main_title11"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnMain11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_title11"
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:onClick="mOnClick"
+            android:layout_height="30dp"
+            android:background="#ffff00"
+            android:textSize="20sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/main_title12"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnMain12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClick"
+            android:text="@string/main_title11"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>

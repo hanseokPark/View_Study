@@ -61,6 +61,18 @@ public class MainActivity extends AppCompatActivity {
             intent.setClass(this, ExActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
+        if(view.getId()==R.id.btnMain10){
+            intent.setClass(this, CustomEventActivity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
+        if(view.getId()==R.id.btnMain11){
+            intent.setClass(this, ResourceActivity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
+        if(view.getId()==R.id.btnMain12){
+            intent.setClass(this, ResourceLanguageActivity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
         startActivity(intent);
     }
 }
