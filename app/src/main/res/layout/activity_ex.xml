@@ -9,18 +9,24 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/main_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="사용자 이름"
         android:gravity="center"/>
     <TextView
+        android:id="@+id/main_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="이메일"
         android:gravity="center"/>
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="여기를 클릭"
-        android:onClick="Exclick"/>
+        android:id="@+id/exbutton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="여기를 클릭" />
+
+
 </LinearLayout>
