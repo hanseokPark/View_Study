@@ -155,7 +155,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="mOnClick"
-            android:text="@string/main_title11"
+            android:text="@string/main_title12"
             android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>

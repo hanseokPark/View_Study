@@ -23,6 +23,7 @@
 
     <Button
         android:id="@+id/exbutton"
+        android:onClick="onclick"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="center"

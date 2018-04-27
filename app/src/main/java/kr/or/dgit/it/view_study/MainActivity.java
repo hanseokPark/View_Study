@@ -58,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("title", ((Button)view).getText());
         }
         if(view.getId()==R.id.btnMain09){
+            intent.setClass(this,  Lab5_2Activity.class);
+            intent.putExtra("title", ((Button)view).getText());
+        }
+        if(view.getId()==R.id.btnMainEx){
             intent.setClass(this, ExActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
@@ -69,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
             intent.setClass(this, ResourceActivity.class);
             intent.putExtra("title", ((Button)view).getText());
         }
-        if(view.getId()==R.id.btnMain12){
+       /* if(view.getId()==R.id.btnMain12){
             intent.setClass(this, ResourceLanguageActivity.class);
             intent.putExtra("title", ((Button)view).getText());
-        }
+        }*/
         startActivity(intent);
     }
 }

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ExActivity extends AppCompatActivity {
     TextView sname;
@@ -25,7 +26,7 @@ public class ExActivity extends AppCompatActivity {
 
         sname = findViewById(R.id.main_name);
         semail = findViewById(R.id.main_email);
-        exbutton = findViewById(R.id.exbutton);
+       /* exbutton = findViewById(R.id.exbutton);*/
     }
 
     public void onclick(View view) {
@@ -45,7 +46,12 @@ public class ExActivity extends AppCompatActivity {
                     semail.setText(edit2.getText().toString());
                 }
             });
-            dlg.setNegativeButton("취소",null);
+            dlg.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Toast.makeText(ExActivity.this, "취소됐습니다.", Toast.LENGTH_SHORT).show();
+                }
+            });
             dlg.show();
         }
     }
